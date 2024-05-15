@@ -1,8 +1,6 @@
 import {Routes, Route} from 'react-router-dom';
 import { routesConfig } from './Routestype';
 
-// sdsadasd
-
 export const AppRoutes = (
     <Routes>
         {routesConfig.map((route) => (
