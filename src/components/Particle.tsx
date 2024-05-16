@@ -1,54 +1,132 @@
+import { ReactElement, useCallback } from "react";
 import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
-function Particle() {
+import type { Engine } from "tsparticles-engine";
+
+const Particle = (): ReactElement => {
+  const init = useCallback(async (engine: Engine) => {
+    await loadSlim(engine); // Cast to any if necessary
+  }, []); // Add an empty dependency array
+
+  const particlesOptions = {
+    // Add your particle options here
+    // Example options:
+    particles: {
+      number: {
+          value: 20,
+          density: {
+              enable: false,
+              value_area: 100
+          }
+      },
+      color: {
+          value: "#fff"
+      },
+      shape: {
+          type: "star",
+          sides: 5
+      },
+      opacity: {
+          value: 0.8,
+          random: false,
+          anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false
+          }
+      },
+      size: {
+          value: 4,
+          random: false,
+          anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false
+          }
+      },
+      rotate: {
+          value: 0,
+          random: true,
+          direction: "clockwise",
+          animation: {
+              enable: true,
+              speed: 5,
+              sync: false
+          }
+      },
+      line_linked: {
+          enable: true,
+          distance: 600,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 2
+      },
+      move: {
+          enable: true,
+          speed: 2,
+          direction: 5,
+          random: false,
+          straight: false,
+          // out_mode: "out",
+          attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
+          }
+      }
+  },
+  interactivity: {
+      events: {
+          onhover: {
+              enable: true,
+              mode: ["grab"]
+          },
+          onclick: {
+              enable: false,
+              mode: "bubble"
+          },
+          resize: true
+      },
+      modes: {
+          grab: {
+              distance: 400,
+              line_linked: {
+                  opacity: 1
+              }
+          },
+          bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3
+          },
+          repulse: {
+              distance: 100
+          },
+          push: {
+              particles_nb: 4
+          },
+          remove: {
+              particles_nb: 2
+          }
+      }
+  },
+  retina_detect: true,
+
+
+  };
+
   return (
     <Particles
       id="tsparticles"
-      params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
-          },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
-          },
-          size: {
-            value: 1,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
-            },
-          },
-        },
-        interactivity: {
-          events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              particles_nb: 1,
-            },
-          },
-        },
-        retina_detect: true,
-      }}
+      init={init}
+      options={particlesOptions}
     />
   );
-}
+};
 
 export default Particle;

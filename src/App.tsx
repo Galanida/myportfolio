@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       {Preloader(load)}
-      <div className="App" >
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
       <Navbar2 />
       {AppRoutes}
       <Footer />
