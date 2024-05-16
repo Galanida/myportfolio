@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 // import AppsIcon from "@mui/icons-material/Apps";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
-import ArrowBack from "@mui/icons-material/ArrowBack";
+import DehazeSharp from "@mui/icons-material/DehazeSharp";
 
 import Box from "@mui/material/Box";
 import {
@@ -29,8 +29,8 @@ import Footer from "../navbar-footer/Footer";
 import { menuItems } from "./utils";
 
 const StyledBox = styled(Box)({
-  width: 280,
-  background: "#511",
+  width: 300,
+  background:  '#2d1950',
   height: "100%",
 });
 
@@ -48,7 +48,7 @@ const StyledListItemButton = styled(Link)({
 });
 
 const StyledAppBar = styled(AppBar)({
-  background: "#222",
+  background: '#2d1950',
   margin: 0,
 });
 
@@ -106,7 +106,7 @@ export const Navbar = () => {
 
   const sideList = (): ReactElement => (
     <StyledBox component="div">
-      <StyledAvatar src={avatar} alt="adrian" />
+      <StyledAvatar src={avatar} alt="jenrey" />
       {renderInfo()}
       <Divider />
       {renderList()}
@@ -119,7 +119,7 @@ export const Navbar = () => {
         <StyledAppBar position="absolute">
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack
+              <DehazeSharp
                 sx={{ color: "#FF6347", marginRight: "1rem" }}
                 fontSize="large"
               />
