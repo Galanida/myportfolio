@@ -1,8 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/home-main.svg";
 import Particle from "../../components/Particle";
-// import "../../style.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Home2 from "./Home2";
 import Type from "./Type";
 

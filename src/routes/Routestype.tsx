@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 
 export const routesConfig: RouteType[] =  [
  {
-    path: "/",
+    path: "/myportfolio/",
     element: <Home />,
  },
  {
