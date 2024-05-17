@@ -24,6 +24,7 @@
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.2.1",
     "react-parallax-tilt": "^1.7.226",
+    "react-pdf": "^8.0.2",
     "react-router-dom": "^6.23.1",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.11",

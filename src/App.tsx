@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AppRoutes } from './routes/config';
 import Footer from './components/Footerpages'
-import Navbar2 from './components/navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 import "./App.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +22,7 @@ function App() {
     <>
       {Preloader(load)}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-      <Navbar2 />
+      <Navbar/>
       {AppRoutes}
       <Footer />
       </div>

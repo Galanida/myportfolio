@@ -1,9 +1,6 @@
 import { ReactElement, ReactNode, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
 import { styled } from "@mui/material/styles";
-
-// import AppsIcon from "@mui/icons-material/Apps";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import DehazeSharp from "@mui/icons-material/DehazeSharp";

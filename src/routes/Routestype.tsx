@@ -1,5 +1,7 @@
 import { RouteType } from "./types";
 import Home from "../pages/Home/Home";
+import Home2 from "../pages/Home/Home2";
+import ResumeNew from "../pages/Resume/ResumeNew";
 
 export const routesConfig: RouteType[] =  [
  {
@@ -7,19 +9,19 @@ export const routesConfig: RouteType[] =  [
     element: <Home />,
  },
  {
+   path: "/myportfolio/cv",
+   element: <ResumeNew />,
+ },
+ {
     path: "/myportfolio/about",
-    element: 'about',
+    element: <Home2 />,
  },
  {
     path: "/myportfolio/projects",
     element: "projects",
  },
  {
-   path: "/myportfolio/cv",
-   element: "CV",
- },
- {
    path: "/myportfolio/contact",
-   element: "CV",
+   element: "contact",
  },
 ]

@@ -5,7 +5,7 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import InfoIcon from "@mui/icons-material/Info";
 
 export const menuItems = [
-  { listIcon: <HomeIcon />, listText: "Home", listPath: "/myportfolio" },
+  { listIcon: <HomeIcon />, listText: "Home", listPath: "/myportfolio/" },
   {
     listIcon: <AssignmentIndIcon />,
     listText: "Resume",
