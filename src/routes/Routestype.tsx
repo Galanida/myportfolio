@@ -1,6 +1,6 @@
 import { RouteType } from "./types";
 import Home from "../pages/Home/Home";
-import Home2 from "../pages/Home/Home2";
+import About from "../pages/About/About";
 import ResumeNew from "../pages/Resume/ResumeNew";
 
 export const routesConfig: RouteType[] =  [
@@ -14,7 +14,7 @@ export const routesConfig: RouteType[] =  [
  },
  {
     path: "/myportfolio/about",
-    element: <Home2 />,
+    element: <About />,
  },
  {
     path: "/myportfolio/projects",

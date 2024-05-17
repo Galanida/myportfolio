@@ -24,8 +24,8 @@ const StyledBottomNavigationAction = styled(BottomNavigationAction)(() => ({
 
   const Footer = () => {
     const facebookLink = "https://www.facebook.com/jenrey.galanida";
-    const linkedinLink = "https://www.linkedin.com";
-    const githubLink = "https://www.github.com";
+    const linkedinLink = "https://www.linkedin.com/in/jenrey-ladiao-galanida-468262243/";
+    const githubLink = "https://github.com/Galanida";
   
     return (
       <StyledBottomNavigation>
