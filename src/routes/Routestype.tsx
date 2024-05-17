@@ -2,6 +2,7 @@ import { RouteType } from "./types";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import ResumeNew from "../pages/Resume/ResumeNew";
+import Projects from "../pages/Projects/Projects";
 
 export const routesConfig: RouteType[] =  [
  {
@@ -18,7 +19,7 @@ export const routesConfig: RouteType[] =  [
  },
  {
     path: "/myportfolio/projects",
-    element: "projects",
+    element: <Projects/>,
  },
  {
    path: "/myportfolio/contact",
