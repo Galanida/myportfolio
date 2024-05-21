@@ -9,6 +9,8 @@ function Type() {
           "Front-end Web Developer",
           "React JS Developer",
           "TypeScript Developer",
+          "React Frameworks",
+          "CSS, HTML, Git, Restful APIs, Material UI, Bootstrap, and others"
         ],
         autoStart: true,
         loop: true,

@@ -8,7 +8,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Jenrey Ladiao Galanida </span>
-            from <span className="purple"> Southville 8b, San Isidro, Montalban, Philippines.</span>
+            from <span className="purple"> Southville 8b, San Isidro, Montalban, Rizal, Philippines.</span>
             <br />
             I am Front-end Web Developer almost 2 years.
             <br />

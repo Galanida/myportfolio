@@ -32,7 +32,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> React JS, Typcript , And React Frameworks </b>
+                <b className="purple"> React JS, Typescript , And React Frameworks </b>
               </i>
               <br />
               <br />
