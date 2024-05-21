@@ -12,7 +12,7 @@ function AboutCard() {
             <br />
             I am Front-end Web Developer almost 2 years.
             <br />
-            Graduated wih a <span className="purple"> Bachelor of Science in Information Technology </span>
+            Graduated with a <span className="purple"> Bachelor of Science in Information Technology </span>
              from <span className="purple"> Colegio De Montalban. </span> 
             <br />
             <br />

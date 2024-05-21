@@ -20,7 +20,7 @@ import {
   ListItemIcon,
 } from "@mui/material";
 
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/jenreyAvatar.png";
 
 import Footer from "../navbar-footer/Footer";
 import { menuItems } from "./utils";

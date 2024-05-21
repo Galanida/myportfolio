@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -7,6 +6,16 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { styled } from "@mui/material/styles";
+import { Avatar } from "@mui/material";
+import avatar from "../../assets/jenreyAvatar.png";
+
+const StyledAvatar = styled(Avatar)({
+  display: "block",
+  margin: "0.5rem auto",
+  width: "15rem",
+  height: "15rem",
+});
 
 function Home2() {
   return (
@@ -47,9 +56,9 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={2} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <StyledAvatar src={avatar} alt="jenrey" />
             </Tilt>
           </Col>
         </Row>
