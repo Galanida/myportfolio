@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+     {/* Preloader */}
       {Preloader(load)}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
       <Navbar/>
